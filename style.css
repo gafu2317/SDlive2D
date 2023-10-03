@@ -1,0 +1,115 @@
+.midasi {
+  margin: 50px 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* テキストを中央揃えにする */
+  font-size: 36px; /* 好きなフォントサイズを指定 */
+  border: 5px solid;
+  background-image: linear-gradient(
+    89.9deg,
+    rgba(178, 253, 238, 0.96) 10%,
+    rgba(207, 244, 254, 1) 30%,
+    rgba(207, 244, 254, 1) 45%,
+    rgba(255, 230, 255, 1) 60%,
+    rgba(255, 204, 255, 1) 75%,
+    rgba(219, 183, 255, 0.85) 86%
+  );
+  color: #ff007f;
+  font-weight: bold;
+}
+
+.speech-bubble-container {
+  display: flex;
+  align-items: center; /* 垂直方向の中央揃え */
+  justify-content: center; /* 横方向に中央揃え */
+}
+
+.gafuIcon {
+  width: 100px; /* アイコンの幅を設定 */
+  height: 100px; /* アイコンの高さを設定 */
+}
+
+.balloon .gafuIcon {
+  margin: 30px;
+}
+
+.balloon .gafuIcon img {
+  width: 100%;
+  height: auto;
+}
+
+.balloon .speech-bubble {
+  width: 100%;
+}
+
+.says {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #d7ebfe;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #d7ebfe;
+}
+
+.says p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* 横方向に中央揃え */
+  align-items: center; /* 縦方向に中央揃え */
+  margin: 50px;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 300px); /* 2列 */
+  grid-template-rows: repeat(2, 50px); /* 2行 */
+  gap: 50px; /* ボタン間の間隔を調整 */
+}
+
+Button {
+  font-size: 18px;
+  display: inline-block;
+  padding: 0.5em 1em 0.3em;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffcccc;
+  background-size: 10px 10px;
+  background-image: radial-gradient(#f8a7b1 15%, transparent 20%),
+    radial-gradient(#f8a7b1 15%, transparent 20%);
+  background-position: 0 0, 15px 15px;
+}
+
+.linkComment {
+  text-align: center; /* テキストを中央揃えにする */
+}
+
+.custom-icon {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.snsIcon-container {
+  display: flex;
+  justify-content: center; /* 横方向に中央揃え */
+  align-items: center; /* 縦方向に中央揃え */
+}
+
+.snsIcon-container img {
+  margin: 0 8px; /* 画像間の間隔を調整 */
+}
