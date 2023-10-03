@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ライツアウト</title>
+    <link rel="stylesheet" href="./css/game1.css">
+</head>
+<body>
+    <main>
+        <div id="modal">
+            <h1>ライツアウト</h1>
+            <p>緑色に点灯したパネルをクリックすると自身と上下左右のパネルが
+            点灯していた場合は消灯、消灯していた場合は点灯と反転します。
+            すべてのマスを消灯させればクリアです。</p>
+            <P>3x3から15X15マスののモードを用意しました。下のボタンからマスの数を選ぶとゲームが開始されます。</P>
+
+            <div id="selects">
+                <div id="3" class="select">3x3</div>
+                <div id="4" class="select">4x4</div>
+                <div id="5" class="select">5x5</div>
+                <div id="6" class="select">6x6</div>
+                <div id="7" class="select">7x7</div>
+                <div id="8" class="select">8x8</div>
+                <div id="9" class="select">9x9</div>
+                <div id="10" class="select">10x10</div>
+                <div id="11" class="select">11x11</div>
+                <div id="12" class="select">12x12</div>
+                <div id="13" class="select">13x13</div>
+                <div id="14" class="select">14x14</div>
+                <div id="15" class="select">15x15</div>
+            </div>
+        </div>
+        <div id="end" class="hide">
+            <p>クリア！！！</p>
+            <p id="reset" onclick="window.location.reload()">Click Reset</p>
+        </div>
+
+
+        <table id="board"></table>
+    </main>
+    
+    <script src="./js/game1.js"></script>
+</body>
+</html>

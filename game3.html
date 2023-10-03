@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/game3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ブロック崩し</title>
+</head>
+<body>
+  <div class="container">
+    <div class="breakout">
+      <header>BREAKOUT</header>
+      <canvas id="canvas" width="480" height="500"></canvas>
+      <a id="start" onclick="gameButton();startTimer()" class="btn-circle-border-double">START</a>
+      <audio id="soundBrick" src="https://taira-komori.jpn.org/sfxr/sfxrse/02laser/shoot01.mp3"       type="audio/mp3" preload="auto"></audio>
+      <audio id="soundBar"   src="https://taira-komori.jpn.org/sfxr/sfxrse/02laser/shoot03.mp3"       type="audio/mp3" preload="auto"></audio>
+      <audio id="soundFail"  src="https://taira-komori.jpn.org/sfxr/sfxrse/04powerup/powerdown02.mp3" type="audio/mp3" preload="auto"></audio>
+      <audio id="soundUp"    src="https://taira-komori.jpn.org/sfxr/sfxrse/04powerup/powerup05.mp3"   type="audio/mp3" preload="auto"></audio>
+    </div>
+    <div class="explanation">
+      <p>STARTボタンを押すとゲームが始まります。</p>
+      <p>SPEED UPをおすと早くなります。</p>
+      <p>右上はライフ、左上はスコアです。</p>
+      <p>ブロックを全て消すとクリアです。</p>
+      <p>ボールを落とすとゲームオーバーです。</p>
+      <p>ぜひspeed upに挑戦してください！</p>
+    </div>
+  </div>
+
+
+  <script src="./js/game3.js"></script>
+</body>
+</html>
